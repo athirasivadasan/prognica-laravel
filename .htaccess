@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^prognica$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^prognica$
+RewriteCond %{HTTP_HOST} ^$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^$
 RewriteCond %{REQUEST_URI} !public/
 RewriteRule (.*) /public/$1 [L]
