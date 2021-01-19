@@ -26,9 +26,9 @@
                         $.each(data.result_data, function(key, result) {
 
                             console.log(result.img_location);
-                            $(".img_location").append(' <img src="'+result.img_location+'" alt="Girl in a jacket" width="300" height="300"> ');
-                            $(".img_original").append(' <img src="'+result.img_original+'" alt="Girl in a jacket" width="300" height="300"> ');
-                            $(".img_result").append(' <img src="'+result.img_result+'" alt="Girl in a jacket" width="300" height="300"> ');
+                            $(".img_location").html(' <img src="'+result.img_location+'" alt="Girl in a jacket" width="300" height="300"> ');
+                            $(".img_original").html(' <img src="'+result.img_original+'" alt="Girl in a jacket" width="300" height="300"> ');
+                            $(".img_result").html(' <img src="'+result.img_result+'" alt="Girl in a jacket" width="300" height="300"> ');
                             $(".float-right").html('<a href="'+result.report+'" download>Download Report</a>');
                             $(".writeinfo").append('<ul class="list-group list-group-flush">');
                             $(".writeinfo").append('<li class="list-group-item">Tumor Size:'+ result.size_major_axis +'*'+ result.size_minor_axis+'*' + result.size_depth+ '</li>');
